@@ -1,0 +1,41 @@
+services:
+  novel-platform-api:
+    build:
+      context: ./api
+    depends_on:
+      - novel-platform-db
+    ports:
+      - 8000:8000
+    networks:
+      - novel-platform
+
+  novel-platform-frontend:
+    build:
+      context: ./app
+    depends_on:
+      - novel-platform-api
+    ports:
+      - 8080:8080
+    networks:
+      - novel-platform
+
+  novel-platform-db:
+    image: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: novelplatform
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    networks:
+      - novel-platform
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+networks:
+  novel-platform:
+
+volumes:
+  mysql-data:
