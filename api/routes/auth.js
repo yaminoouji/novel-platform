@@ -20,7 +20,7 @@ router.post("/login", (req, res, next) => {
       delete user.password;
 
       jwt.sign(
-        { username: user.username },
+        { username: user.username, id: user.id },
         process.env.JWT_SECRET,
         (err, token) => {
           if (err) {
