@@ -65,7 +65,7 @@ model Chapter {
   novelId       Int
   title         String
   date          DateTime
-  content       String?       @db.Text
+  content       String?       @db.LongText
   status        String
   chapterNumber Int
   Comment       Comment[]
