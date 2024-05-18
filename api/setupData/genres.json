@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Urban",
+        "type": "Novel"
+    },
+    {
+        "name": "Fantasty",
+        "type": "Novel"
+    },
+    {
+        "name": "History",
+        "type": "Novel"
+    },
+    {
+        "name": "Horror",
+        "type": "Novel"
+    },
+    {
+        "name": "Sci-fi",
+        "type": "Novel"
+    },
+    {
+        "name": "Sports",
+        "type": "Novel"
+    },
+    {
+        "name": "Games",
+        "type": "Novel"
+    },
+    {
+        "name": "Realistic",
+        "type": "Novel"
+    },
+    {
+        "name": "Action",
+        "type": "Novel"
+    },
+    {
+        "name": "War",
+        "type": "Novel"
+    },
+    {
+        "name": "Book & Literature",
+        "type": "Fanfic"
+    },
+    {
+        "name": "Movies",
+        "type": "Fanfic"
+    },
+    {
+        "name": "TV",
+        "type": "Fanfic"
+    },
+    {
+        "name": "Anime & Manga",
+        "type": "Fanfic"
+    },
+    {
+        "name": "Video Games",
+        "type": "Fanfic"
+    },
+    {
+        "name": "Others",
+        "type": "Fanfic"
+    }
+]
